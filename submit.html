@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<html>
+
+<head>
+    <title>Do it yourself</title>
+    <link rel="stylesheet" href="startpage.css">
+</head>
+
+
+<body>
+        <header> 
+            <h1>Update Factory</h1>
+            <!--<h2>Submit your update idea to develop and improve</h2>-->
+        </header>
+        
+    
+        <nav>
+            <div id="navi">
+                <ul>
+                    <li>
+                        <a href="startpage.html">Latest updates</a>
+                    </li>
+                    <li>
+                        <a href="companies.html">Companies</a>
+                    </li>
+                    <li>
+                        <a href="submit.html">Submit your own idea</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main">
+
+        <div id="main-content">
+
+            <h1> Submit your own idea!</h1>
+            
+            <hr class="bold">
+    
+            <label for="fname">Name:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="fname" name="email"><br>
+
+            <label for="email">Company:</label>
+            <input type="text" id="fname" name="company"><br>
+
+            <label for="email">Idea:</label>
+            <input type="text" id="fname" name="idea" placeholders="Hallo"style="height: 500px"><br>
+            <input type="submit">
+        </div>
+
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+
+</html>
