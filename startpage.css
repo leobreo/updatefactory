@@ -68,12 +68,7 @@ div#main-content{
 }
 
 
-div#playlist,
-div#feed,
-div#friends,
-div#ai,
-div#ultimate,
-div#playlist-friends{
+.column{
     margin-right: 40%;
     /*background-color: rgba(4, 80, 143,0.3);*/
     text-align: justify;
@@ -86,7 +81,7 @@ div#playlist-friends{
         }
 
         div#friends{
-            padding-bottom: 110px;
+            padding-bottom: 50px;
         }       
 /* SPOTIFY PICTURES ON THE RIGHT */
         div#right-playlist{
@@ -110,7 +105,12 @@ div#playlist-friends{
             padding: 3% 3% 2% 2%;
         }
 
-
+        div#me{
+            width: 35%;
+            float: right;
+            display: flex;
+            justify-content: center;
+        }
 
 img{
     float: right;
