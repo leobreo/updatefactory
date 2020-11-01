@@ -41,39 +41,28 @@
             <h1> Submit your own idea!</h1>
             
             <hr class="bold">
-    
-            <label for="fname">Name:</label>
-            <input type="text" id="name" name="name"><br>
 
-            <label for="email">Email:</label>
-            <input type="text" id="fname" name="email"><br>
+        <form name="contact" method="POST" data-netlify="true">
+            
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            </p>
+                <label>Company: <input type="text" name="name" /></label>   
+            <p>
+                <label>Update Idea: <textarea></textarea></label>   
+            <p>
+                <button type="submit">Send</button>
+            </p>
 
-            <label for="email">Company:</label>
-            <input type="text" id="fname" name="company"><br>
+          </form>
 
-            <label for="email">Idea:</label>
-            <input type="text" id="fname" name="idea" placeholders="Hallo"style="height: 500px"><br>
-            <input type="submit">
         </div>
-
     </div>
 
-    <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-        </script>
 </body>
 
 </html>
